@@ -1,0 +1,1542 @@
+{
+  "algebra-1": {
+    "slug": "algebra-1",
+    "title": "Algebra 1",
+    "subtitle": "Build algebra confidence through equations, functions, and interactive problem solving.",
+    "lessonsCount": 77,
+    "topicsCount": 599,
+    "units": [
+      {
+        "unitNumber": 1,
+        "slug": "real-numbers-and-sets",
+        "title": "Real Numbers and Sets",
+        "topicsCount": 42,
+        "lessons": [
+          {
+            "slug": "fundamentals-of-set-theory",
+            "title": "Fundamentals of Set Theory",
+            "href": "/course/math/algebra-1/fundamentals-of-set-theory/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "real-number-addition-and-subtraction",
+            "title": "Real-Number Addition and Subtraction",
+            "href": "/course/math/algebra-1/real-number-addition-and-subtraction/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "real-number-multiplication-and-division",
+            "title": "Real-Number Multiplication and Division",
+            "href": "/course/math/algebra-1/real-number-multiplication-and-division/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "understanding-powers-and-exponents",
+            "title": "Understanding Powers and Exponents",
+            "href": "/course/math/algebra-1/understanding-powers-and-exponents/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "real-numbers-and-their-square-roots",
+            "title": "Real Numbers and Their Square Roots",
+            "href": "/course/math/algebra-1/real-numbers-and-their-square-roots/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 2,
+        "slug": "algebraic-expressions",
+        "title": "Algebraic Expressions",
+        "topicsCount": 22,
+        "lessons": [
+          {
+            "slug": "working-with-variables-and-expressions",
+            "title": "Working with Variables and Expressions",
+            "href": "/course/math/algebra-1/working-with-variables-and-expressions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "applying-the-order-of-operations",
+            "title": "Applying the Order of Operations",
+            "href": "/course/math/algebra-1/applying-the-order-of-operations/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "methods-for-simplifying-expressions",
+            "title": "Methods for Simplifying Expressions",
+            "href": "/course/math/algebra-1/methods-for-simplifying-expressions/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 3,
+        "slug": "linear-equations",
+        "title": "Linear Equations",
+        "topicsCount": 41,
+        "lessons": [
+          {
+            "slug": "equations-using-addition-and-subtraction",
+            "title": "Equations Using Addition and Subtraction",
+            "href": "/course/math/algebra-1/equations-using-addition-and-subtraction/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "equations-using-multiplication-and-division",
+            "title": "Equations Using Multiplication and Division",
+            "href": "/course/math/algebra-1/equations-using-multiplication-and-division/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "two-step-equation-solutions",
+            "title": "Two-Step Equation Solutions",
+            "href": "/course/math/algebra-1/two-step-equation-solutions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "multi-step-equation-solutions",
+            "title": "Multi-Step Equation Solutions",
+            "href": "/course/math/algebra-1/multi-step-equation-solutions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "equations-with-variables-on-each-side",
+            "title": "Equations with Variables on Each Side",
+            "href": "/course/math/algebra-1/equations-with-variables-on-each-side/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 4,
+        "slug": "ratios-proportions-and-percents",
+        "title": "Ratios, Proportions, and Percents",
+        "topicsCount": 38,
+        "lessons": [
+          {
+            "slug": "understanding-rates-ratios-and-proportions",
+            "title": "Understanding Rates, Ratios, and Proportions",
+            "href": "/course/math/algebra-1/understanding-rates-ratios-and-proportions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "using-proportions",
+            "title": "Using Proportions",
+            "href": "/course/math/algebra-1/using-proportions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "understanding-percents",
+            "title": "Understanding Percents",
+            "href": "/course/math/algebra-1/understanding-percents/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "using-percents",
+            "title": "Using Percents",
+            "href": "/course/math/algebra-1/using-percents/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "increases-and-decreases-by-percent",
+            "title": "Increases and Decreases by Percent",
+            "href": "/course/math/algebra-1/increases-and-decreases-by-percent/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 5,
+        "slug": "linear-inequalities",
+        "title": "Linear Inequalities",
+        "topicsCount": 39,
+        "lessons": [
+          {
+            "slug": "representing-inequalities-with-graphs-and-symbols",
+            "title": "Representing Inequalities with Graphs and Symbols",
+            "href": "/course/math/algebra-1/representing-inequalities-with-graphs-and-symbols/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "using-addition-or-subtraction-to-solve-inequalities",
+            "title": "Using Addition or Subtraction to Solve Inequalities",
+            "href": "/course/math/algebra-1/using-addition-or-subtraction-to-solve-inequalities/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "using-multiplication-or-division-to-solve-inequalities",
+            "title": "Using Multiplication or Division to Solve Inequalities",
+            "href": "/course/math/algebra-1/using-multiplication-or-division-to-solve-inequalities/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "two-step-and-multi-step-inequality-solutions",
+            "title": "Two-Step and Multi-Step Inequality Solutions",
+            "href": "/course/math/algebra-1/two-step-and-multi-step-inequality-solutions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "inequalities-with-variables-on-each-side",
+            "title": "Inequalities with Variables on Each Side",
+            "href": "/course/math/algebra-1/inequalities-with-variables-on-each-side/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 6,
+        "slug": "compound-and-absolute-value-inequalities",
+        "title": "Compound and Absolute-Value Inequalities",
+        "topicsCount": 8,
+        "lessons": [
+          {
+            "slug": "methods-for-compound-inequalities",
+            "title": "Methods for Compound Inequalities",
+            "href": "/course/math/algebra-1/methods-for-compound-inequalities/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 7,
+        "slug": "relations-and-functions",
+        "title": "Relations and Functions",
+        "topicsCount": 733,
+        "lessons": [
+          {
+            "slug": "function-fundamentals",
+            "title": "Function Fundamentals",
+            "href": "/course/math/algebra-1/function-fundamentals/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "representing-relationships-graphically",
+            "title": "Representing Relationships Graphically",
+            "href": "/course/math/algebra-1/representing-relationships-graphically/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "understanding-relations-and-functions",
+            "title": "Understanding Relations and Functions",
+            "href": "/course/math/algebra-1/understanding-relations-and-functions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "formulating-function-rules",
+            "title": "Formulating Function Rules",
+            "href": "/course/math/algebra-1/formulating-function-rules/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 8,
+        "slug": "function-graphs-and-data-relationships",
+        "title": "Function Graphs and Data Relationships",
+        "topicsCount": 87,
+        "lessons": [
+          {
+            "slug": "representing-functions-graphically",
+            "title": "Representing Functions Graphically",
+            "href": "/course/math/algebra-1/representing-functions-graphically/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 9,
+        "slug": "linear-functions-and-rates-of-change",
+        "title": "Linear Functions and Rates of Change",
+        "topicsCount": 930,
+        "lessons": [
+          {
+            "slug": "recognizing-linear-functions",
+            "title": "Recognizing Linear Functions",
+            "href": "/course/math/algebra-1/recognizing-linear-functions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "applications-of-intercepts",
+            "title": "Applications of Intercepts",
+            "href": "/course/math/algebra-1/applications-of-intercepts/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "understanding-slope-as-a-rate-of-change",
+            "title": "Understanding Slope as a Rate of Change",
+            "href": "/course/math/algebra-1/understanding-slope-as-a-rate-of-change/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "calculating-slope-with-the-slope-formula",
+            "title": "Calculating Slope with the Slope Formula",
+            "href": "/course/math/algebra-1/calculating-slope-with-the-slope-formula/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 10,
+        "slug": "linear-equations-and-transformations",
+        "title": "Linear Equations and Transformations",
+        "topicsCount": 1034,
+        "lessons": [
+          {
+            "slug": "using-slope-intercept-form",
+            "title": "Using Slope-Intercept Form",
+            "href": "/course/math/algebra-1/using-slope-intercept-form/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "using-point-slope-form",
+            "title": "Using Point-Slope Form",
+            "href": "/course/math/algebra-1/using-point-slope-form/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "comparing-slopes-of-parallel-and-perpendicular-lines",
+            "title": "Comparing Slopes of Parallel and Perpendicular Lines",
+            "href": "/course/math/algebra-1/comparing-slopes-of-parallel-and-perpendicular-lines/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "transformations-of-linear-functions",
+            "title": "Transformations of Linear Functions",
+            "href": "/course/math/algebra-1/transformations-of-linear-functions/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 11,
+        "slug": "systems-of-linear-equations",
+        "title": "Systems of Linear Equations",
+        "topicsCount": 1136,
+        "lessons": [
+          {
+            "slug": "graphical-solutions-of-systems",
+            "title": "Graphical Solutions of Systems",
+            "href": "/course/math/algebra-1/graphical-solutions-of-systems/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "substitution-method-for-systems",
+            "title": "Substitution Method for Systems",
+            "href": "/course/math/algebra-1/substitution-method-for-systems/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "elimination-method-for-systems",
+            "title": "Elimination Method for Systems",
+            "href": "/course/math/algebra-1/elimination-method-for-systems/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "methods-for-special-systems",
+            "title": "Methods for Special Systems",
+            "href": "/course/math/algebra-1/methods-for-special-systems/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "applications-of-systems-of-equations",
+            "title": "Applications of Systems of Equations",
+            "href": "/course/math/algebra-1/applications-of-systems-of-equations/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 12,
+        "slug": "linear-inequalities-in-two-variables",
+        "title": "Linear Inequalities in Two Variables",
+        "topicsCount": 1215,
+        "lessons": [
+          {
+            "slug": "graphical-representation-of-linear-inequalities",
+            "title": "Graphical Representation of Linear Inequalities",
+            "href": "/course/math/algebra-1/graphical-representation-of-linear-inequalities/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "linear-inequality-system-solutions",
+            "title": "Linear Inequality System Solutions",
+            "href": "/course/math/algebra-1/linear-inequality-system-solutions/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 13,
+        "slug": "exponents-and-scientific-notation",
+        "title": "Exponents and Scientific Notation",
+        "topicsCount": 1333,
+        "lessons": [
+          {
+            "slug": "exponent-rules-for-products-and-powers",
+            "title": "Exponent Rules for Products and Powers",
+            "href": "/course/math/algebra-1/exponent-rules-for-products-and-powers/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "understanding-integer-exponents",
+            "title": "Understanding Integer Exponents",
+            "href": "/course/math/algebra-1/understanding-integer-exponents/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "exponent-rules-for-quotients",
+            "title": "Exponent Rules for Quotients",
+            "href": "/course/math/algebra-1/exponent-rules-for-quotients/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "using-exponents-in-scientific-notation",
+            "title": "Using Exponents in Scientific Notation",
+            "href": "/course/math/algebra-1/using-exponents-in-scientific-notation/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 14,
+        "slug": "polynomial-operations",
+        "title": "Polynomial Operations",
+        "topicsCount": 1429,
+        "lessons": [
+          {
+            "slug": "polynomial-fundamentals",
+            "title": "Polynomial Fundamentals",
+            "href": "/course/math/algebra-1/polynomial-fundamentals/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "polynomial-addition-and-subtraction",
+            "title": "Polynomial Addition and Subtraction",
+            "href": "/course/math/algebra-1/polynomial-addition-and-subtraction/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "products-of-polynomials-and-monomials",
+            "title": "Products of Polynomials and Monomials",
+            "href": "/course/math/algebra-1/products-of-polynomials-and-monomials/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "products-of-binomials",
+            "title": "Products of Binomials",
+            "href": "/course/math/algebra-1/products-of-binomials/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 15,
+        "slug": "common-factor-and-trinomial-factoring",
+        "title": "Common-Factor and Trinomial Factoring",
+        "topicsCount": 1529,
+        "lessons": [
+          {
+            "slug": "understanding-factors-and-greatest-common-factors",
+            "title": "Understanding Factors and Greatest Common Factors",
+            "href": "/course/math/algebra-1/understanding-factors-and-greatest-common-factors/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "using-the-gcf-for-factoring",
+            "title": "Using the GCF for Factoring",
+            "href": "/course/math/algebra-1/using-the-gcf-for-factoring/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "factorization-of-x-bx-c",
+            "title": "Factorization of x² + bx + c",
+            "href": "/course/math/algebra-1/factorization-of-x-bx-c/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "factorization-of-ax-bx-c",
+            "title": "Factorization of ax² + bx + c",
+            "href": "/course/math/algebra-1/factorization-of-ax-bx-c/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 16,
+        "slug": "special-factoring-patterns-and-strategy",
+        "title": "Special Factoring Patterns and Strategy",
+        "topicsCount": 1614,
+        "lessons": [
+          {
+            "slug": "special-product-factorization",
+            "title": "Special-Product Factorization",
+            "href": "/course/math/algebra-1/special-product-factorization/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "selecting-methods-for-factoring",
+            "title": "Selecting Methods for Factoring",
+            "href": "/course/math/algebra-1/selecting-methods-for-factoring/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 17,
+        "slug": "quadratic-functions",
+        "title": "Quadratic Functions",
+        "topicsCount": 1732,
+        "lessons": [
+          {
+            "slug": "recognizing-quadratic-functions",
+            "title": "Recognizing Quadratic Functions",
+            "href": "/course/math/algebra-1/recognizing-quadratic-functions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "analyzing-quadratic-function-characteristics",
+            "title": "Analyzing Quadratic Function Characteristics",
+            "href": "/course/math/algebra-1/analyzing-quadratic-function-characteristics/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "representing-quadratic-functions-graphically",
+            "title": "Representing Quadratic Functions Graphically",
+            "href": "/course/math/algebra-1/representing-quadratic-functions-graphically/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "transformations-of-quadratic-functions",
+            "title": "Transformations of Quadratic Functions",
+            "href": "/course/math/algebra-1/transformations-of-quadratic-functions/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 18,
+        "slug": "quadratic-equations",
+        "title": "Quadratic Equations",
+        "topicsCount": 1846,
+        "lessons": [
+          {
+            "slug": "graphical-solutions-of-quadratic-equations",
+            "title": "Graphical Solutions of Quadratic Equations",
+            "href": "/course/math/algebra-1/graphical-solutions-of-quadratic-equations/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "factoring-method-for-quadratic-equations",
+            "title": "Factoring Method for Quadratic Equations",
+            "href": "/course/math/algebra-1/factoring-method-for-quadratic-equations/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "square-root-method-for-quadratic-equations",
+            "title": "Square-Root Method for Quadratic Equations",
+            "href": "/course/math/algebra-1/square-root-method-for-quadratic-equations/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "using-the-completing-the-square-method",
+            "title": "Using the Completing-the-Square Method",
+            "href": "/course/math/algebra-1/using-the-completing-the-square-method/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "using-the-quadratic-formula",
+            "title": "Using the Quadratic Formula",
+            "href": "/course/math/algebra-1/using-the-quadratic-formula/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "understanding-the-discriminant",
+            "title": "Understanding the Discriminant",
+            "href": "/course/math/algebra-1/understanding-the-discriminant/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 19,
+        "slug": "probability",
+        "title": "Probability",
+        "topicsCount": 1929,
+        "lessons": [
+          {
+            "slug": "estimating-probability-experimentally",
+            "title": "Estimating Probability Experimentally",
+            "href": "/course/math/algebra-1/estimating-probability-experimentally/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "calculating-probability-theoretically",
+            "title": "Calculating Probability Theoretically",
+            "href": "/course/math/algebra-1/calculating-probability-theoretically/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "counting-with-combinations-and-permutations",
+            "title": "Counting with Combinations and Permutations",
+            "href": "/course/math/algebra-1/counting-with-combinations-and-permutations/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "understanding-independent-and-dependent-events",
+            "title": "Understanding Independent and Dependent Events",
+            "href": "/course/math/algebra-1/understanding-independent-and-dependent-events/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 20,
+        "slug": "data-displays-and-statistics",
+        "title": "Data Displays and Statistics",
+        "topicsCount": 2042,
+        "lessons": [
+          {
+            "slug": "interpreting-bar-circle-and-line-graphs",
+            "title": "Interpreting Bar, Circle, and Line Graphs",
+            "href": "/course/math/algebra-1/interpreting-bar-circle-and-line-graphs/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "interpreting-stem-and-leaf-plots-and-histograms",
+            "title": "Interpreting Stem-and-Leaf Plots and Histograms",
+            "href": "/course/math/algebra-1/interpreting-stem-and-leaf-plots-and-histograms/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "analyzing-scatter-plots-and-trend-lines",
+            "title": "Analyzing Scatter Plots and Trend Lines",
+            "href": "/course/math/algebra-1/analyzing-scatter-plots-and-trend-lines/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "calculating-mean-median-mode-and-range",
+            "title": "Calculating Mean, Median, Mode, and Range",
+            "href": "/course/math/algebra-1/calculating-mean-median-mode-and-range/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "interpreting-box-and-whisker-plots",
+            "title": "Interpreting Box-and-Whisker Plots",
+            "href": "/course/math/algebra-1/interpreting-box-and-whisker-plots/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      }
+    ]
+  },
+  "algebra-2": {
+    "slug": "algebra-2",
+    "title": "Algebra 2",
+    "subtitle": "Master advanced functions and trigonometry through interactive problem solving.",
+    "lessonsCount": 67,
+    "topicsCount": 545,
+    "units": [
+      {
+        "unitNumber": 1,
+        "slug": "real-numbers-and-algebraic-expressions",
+        "title": "Real Numbers and Algebraic Expressions",
+        "topicsCount": 23,
+        "lessons": [
+          {
+            "slug": "understanding-number-sets",
+            "title": "Understanding Number Sets",
+            "href": "/course/math/algebra-2/understanding-number-sets/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "exploring-real-number-properties",
+            "title": "Exploring Real-Number Properties",
+            "href": "/course/math/algebra-2/exploring-real-number-properties/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "algebraic-expression-simplification",
+            "title": "Algebraic Expression Simplification",
+            "href": "/course/math/algebra-2/algebraic-expression-simplification/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 2,
+        "slug": "exponents-and-roots",
+        "title": "Exponents and Roots",
+        "topicsCount": 16,
+        "lessons": [
+          {
+            "slug": "exponent-rules-and-scientific-notation",
+            "title": "Exponent Rules and Scientific Notation",
+            "href": "/course/math/algebra-2/exponent-rules-and-scientific-notation/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "understanding-square-roots",
+            "title": "Understanding Square Roots",
+            "href": "/course/math/algebra-2/understanding-square-roots/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 3,
+        "slug": "linear-equations-and-functions",
+        "title": "Linear Equations and Functions",
+        "topicsCount": 25,
+        "lessons": [
+          {
+            "slug": "solutions-of-linear-equations-and-inequalities",
+            "title": "Solutions of Linear Equations and Inequalities",
+            "href": "/course/math/algebra-2/solutions-of-linear-equations-and-inequalities/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "graphs-of-linear-functions",
+            "title": "Graphs of Linear Functions",
+            "href": "/course/math/algebra-2/graphs-of-linear-functions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "constructing-linear-functions",
+            "title": "Constructing Linear Functions",
+            "href": "/course/math/algebra-2/constructing-linear-functions/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 4,
+        "slug": "absolute-value-equations-and-functions",
+        "title": "Absolute-Value Equations and Functions",
+        "topicsCount": 15,
+        "lessons": [
+          {
+            "slug": "solutions-of-absolute-value-equations-and-inequalities",
+            "title": "Solutions of Absolute-Value Equations and Inequalities",
+            "href": "/course/math/algebra-2/solutions-of-absolute-value-equations-and-inequalities/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "understanding-absolute-value-functions",
+            "title": "Understanding Absolute-Value Functions",
+            "href": "/course/math/algebra-2/understanding-absolute-value-functions/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 5,
+        "slug": "linear-transformations-and-models",
+        "title": "Linear Transformations and Models",
+        "topicsCount": 18,
+        "lessons": [
+          {
+            "slug": "transformations-of-linear-functions",
+            "title": "Transformations of Linear Functions",
+            "href": "/course/math/algebra-2/transformations-of-linear-functions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "fitting-curves-using-linear-models",
+            "title": "Fitting Curves Using Linear Models",
+            "href": "/course/math/algebra-2/fitting-curves-using-linear-models/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 6,
+        "slug": "linear-systems-inequalities-and-optimization",
+        "title": "Linear Systems, Inequalities, and Optimization",
+        "topicsCount": 39,
+        "lessons": [
+          {
+            "slug": "two-variable-linear-inequalities",
+            "title": "Two-Variable Linear Inequalities",
+            "href": "/course/math/algebra-2/two-variable-linear-inequalities/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "solving-linear-systems-with-graphs-and-tables",
+            "title": "Solving Linear Systems with Graphs and Tables",
+            "href": "/course/math/algebra-2/solving-linear-systems-with-graphs-and-tables/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "solving-linear-systems-by-algebraic-methods",
+            "title": "Solving Linear Systems by Algebraic Methods",
+            "href": "/course/math/algebra-2/solving-linear-systems-by-algebraic-methods/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "solutions-of-linear-inequality-systems",
+            "title": "Solutions of Linear Inequality Systems",
+            "href": "/course/math/algebra-2/solutions-of-linear-inequality-systems/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "fundamentals-of-linear-programming",
+            "title": "Fundamentals of Linear Programming",
+            "href": "/course/math/algebra-2/fundamentals-of-linear-programming/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 7,
+        "slug": "matrix-operations-and-transformations",
+        "title": "Matrix Operations and Transformations",
+        "topicsCount": 725,
+        "lessons": [
+          {
+            "slug": "using-matrices-with-data",
+            "title": "Using Matrices with Data",
+            "href": "/course/math/algebra-2/using-matrices-with-data/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "matrix-multiplication",
+            "title": "Matrix Multiplication",
+            "href": "/course/math/algebra-2/matrix-multiplication/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "geometric-transformations-with-matrices",
+            "title": "Geometric Transformations with Matrices",
+            "href": "/course/math/algebra-2/geometric-transformations-with-matrices/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 8,
+        "slug": "quadratic-functions-and-models",
+        "title": "Quadratic Functions and Models",
+        "topicsCount": 822,
+        "lessons": [
+          {
+            "slug": "graphing-quadratic-functions-through-transformations",
+            "title": "Graphing Quadratic Functions through Transformations",
+            "href": "/course/math/algebra-2/graphing-quadratic-functions-through-transformations/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "exploring-standard-form-quadratic-function-properties",
+            "title": "Exploring Standard-Form Quadratic Function Properties",
+            "href": "/course/math/algebra-2/exploring-standard-form-quadratic-function-properties/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "fitting-curves-using-quadratic-models",
+            "title": "Fitting Curves Using Quadratic Models",
+            "href": "/course/math/algebra-2/fitting-curves-using-quadratic-models/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 9,
+        "slug": "quadratic-equations-and-inequalities",
+        "title": "Quadratic Equations and Inequalities",
+        "topicsCount": 930,
+        "lessons": [
+          {
+            "slug": "graphical-and-factoring-methods-for-quadratic-equations",
+            "title": "Graphical and Factoring Methods for Quadratic Equations",
+            "href": "/course/math/algebra-2/graphical-and-factoring-methods-for-quadratic-equations/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "the-completing-the-square-method",
+            "title": "The Completing-the-Square Method",
+            "href": "/course/math/algebra-2/the-completing-the-square-method/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "using-the-quadratic-formula",
+            "title": "Using the Quadratic Formula",
+            "href": "/course/math/algebra-2/using-the-quadratic-formula/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "solutions-of-quadratic-inequalities",
+            "title": "Solutions of Quadratic Inequalities",
+            "href": "/course/math/algebra-2/solutions-of-quadratic-inequalities/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 10,
+        "slug": "complex-numbers-and-quadratic-roots",
+        "title": "Complex Numbers and Quadratic Roots",
+        "topicsCount": 1020,
+        "lessons": [
+          {
+            "slug": "complex-number-operations",
+            "title": "Complex-Number Operations",
+            "href": "/course/math/algebra-2/complex-number-operations/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "roots-and-complex-numbers",
+            "title": "Roots and Complex Numbers",
+            "href": "/course/math/algebra-2/roots-and-complex-numbers/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 11,
+        "slug": "polynomial-operations-and-division",
+        "title": "Polynomial Operations and Division",
+        "topicsCount": 1147,
+        "lessons": [
+          {
+            "slug": "polynomial-fundamentals",
+            "title": "Polynomial Fundamentals",
+            "href": "/course/math/algebra-2/polynomial-fundamentals/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "polynomial-addition-and-subtraction",
+            "title": "Polynomial Addition and Subtraction",
+            "href": "/course/math/algebra-2/polynomial-addition-and-subtraction/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "polynomial-multiplication",
+            "title": "Polynomial Multiplication",
+            "href": "/course/math/algebra-2/polynomial-multiplication/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "polynomial-factorization",
+            "title": "Polynomial Factorization",
+            "href": "/course/math/algebra-2/polynomial-factorization/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "polynomial-division",
+            "title": "Polynomial Division",
+            "href": "/course/math/algebra-2/polynomial-division/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "synthetic-division-with-the-remainder-and-factor-theorems",
+            "title": "Synthetic Division with the Remainder and Factor Theorems",
+            "href": "/course/math/algebra-2/synthetic-division-with-the-remainder-and-factor-theorems/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 12,
+        "slug": "polynomial-roots-graphs-and-models",
+        "title": "Polynomial Roots, Graphs, and Models",
+        "topicsCount": 1240,
+        "lessons": [
+          {
+            "slug": "determining-real-roots-of-polynomial-equations",
+            "title": "Determining Real Roots of Polynomial Equations",
+            "href": "/course/math/algebra-2/determining-real-roots-of-polynomial-equations/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "understanding-the-fundamental-theorem-of-algebra",
+            "title": "Understanding the Fundamental Theorem of Algebra",
+            "href": "/course/math/algebra-2/understanding-the-fundamental-theorem-of-algebra/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "exploring-polynomial-function-graphs",
+            "title": "Exploring Polynomial Function Graphs",
+            "href": "/course/math/algebra-2/exploring-polynomial-function-graphs/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "transformations-of-polynomial-functions",
+            "title": "Transformations of Polynomial Functions",
+            "href": "/course/math/algebra-2/transformations-of-polynomial-functions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "fitting-curves-using-polynomial-models",
+            "title": "Fitting Curves Using Polynomial Models",
+            "href": "/course/math/algebra-2/fitting-curves-using-polynomial-models/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 13,
+        "slug": "exponential-functions-and-models",
+        "title": "Exponential Functions and Models",
+        "topicsCount": 1331,
+        "lessons": [
+          {
+            "slug": "exponential-growth-and-decay-functions",
+            "title": "Exponential Growth and Decay Functions",
+            "href": "/course/math/algebra-2/exponential-growth-and-decay-functions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "understanding-the-natural-base-e",
+            "title": "Understanding the Natural Base e",
+            "href": "/course/math/algebra-2/understanding-the-natural-base-e/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "transformations-of-exponential-and-logarithmic-functions",
+            "title": "Transformations of Exponential and Logarithmic Functions",
+            "href": "/course/math/algebra-2/transformations-of-exponential-and-logarithmic-functions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "fitting-curves-using-exponential-and-logarithmic-models",
+            "title": "Fitting Curves Using Exponential and Logarithmic Models",
+            "href": "/course/math/algebra-2/fitting-curves-using-exponential-and-logarithmic-models/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 14,
+        "slug": "logarithmic-functions-and-properties",
+        "title": "Logarithmic Functions and Properties",
+        "topicsCount": 1417,
+        "lessons": [
+          {
+            "slug": "understanding-logarithmic-functions",
+            "title": "Understanding Logarithmic Functions",
+            "href": "/course/math/algebra-2/understanding-logarithmic-functions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "exploring-logarithm-properties",
+            "title": "Exploring Logarithm Properties",
+            "href": "/course/math/algebra-2/exploring-logarithm-properties/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 15,
+        "slug": "exponential-and-logarithmic-equations",
+        "title": "Exponential and Logarithmic Equations",
+        "topicsCount": 159,
+        "lessons": [
+          {
+            "slug": "equations-and-inequalities-involving-exponentials-and-logarithms",
+            "title": "Equations and Inequalities Involving Exponentials and Logarithms",
+            "href": "/course/math/algebra-2/equations-and-inequalities-involving-exponentials-and-logarithms/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 16,
+        "slug": "proportional-variation-and-rational-functions",
+        "title": "Proportional Variation and Rational Functions",
+        "topicsCount": 1652,
+        "lessons": [
+          {
+            "slug": "reasoning-with-proportions",
+            "title": "Reasoning with Proportions",
+            "href": "/course/math/algebra-2/reasoning-with-proportions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "understanding-variation-functions",
+            "title": "Understanding Variation Functions",
+            "href": "/course/math/algebra-2/understanding-variation-functions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "understanding-rational-functions",
+            "title": "Understanding Rational Functions",
+            "href": "/course/math/algebra-2/understanding-rational-functions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "multiplication-and-division-of-rational-expressions",
+            "title": "Multiplication and Division of Rational Expressions",
+            "href": "/course/math/algebra-2/multiplication-and-division-of-rational-expressions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "addition-and-subtraction-of-rational-expressions",
+            "title": "Addition and Subtraction of Rational Expressions",
+            "href": "/course/math/algebra-2/addition-and-subtraction-of-rational-expressions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "solutions-of-rational-equations-and-inequalities",
+            "title": "Solutions of Rational Equations and Inequalities",
+            "href": "/course/math/algebra-2/solutions-of-rational-equations-and-inequalities/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 17,
+        "slug": "radical-expressions-functions-and-equations",
+        "title": "Radical Expressions, Functions, and Equations",
+        "topicsCount": 1727,
+        "lessons": [
+          {
+            "slug": "rational-exponents-and-radical-expressions",
+            "title": "Rational Exponents and Radical Expressions",
+            "href": "/course/math/algebra-2/rational-exponents-and-radical-expressions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "understanding-radical-functions",
+            "title": "Understanding Radical Functions",
+            "href": "/course/math/algebra-2/understanding-radical-functions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "solutions-of-radical-equations-and-inequalities",
+            "title": "Solutions of Radical Equations and Inequalities",
+            "href": "/course/math/algebra-2/solutions-of-radical-equations-and-inequalities/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 18,
+        "slug": "function-foundations-and-representations",
+        "title": "Function Foundations and Representations",
+        "topicsCount": 1851,
+        "lessons": [
+          {
+            "slug": "understanding-relations-and-functions",
+            "title": "Understanding Relations and Functions",
+            "href": "/course/math/algebra-2/understanding-relations-and-functions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "using-function-notation",
+            "title": "Using Function Notation",
+            "href": "/course/math/algebra-2/using-function-notation/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "fundamentals-of-parent-functions",
+            "title": "Fundamentals of Parent Functions",
+            "href": "/course/math/algebra-2/fundamentals-of-parent-functions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "representing-functions-in-multiple-forms",
+            "title": "Representing Functions in Multiple Forms",
+            "href": "/course/math/algebra-2/representing-functions-in-multiple-forms/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "understanding-piecewise-functions",
+            "title": "Understanding Piecewise Functions",
+            "href": "/course/math/algebra-2/understanding-piecewise-functions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "understanding-transformations",
+            "title": "Understanding Transformations",
+            "href": "/course/math/algebra-2/understanding-transformations/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "function-transformations",
+            "title": "Function Transformations",
+            "href": "/course/math/algebra-2/function-transformations/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 19,
+        "slug": "function-operations-and-inverses",
+        "title": "Function Operations and Inverses",
+        "topicsCount": 1925,
+        "lessons": [
+          {
+            "slug": "function-operations",
+            "title": "Function Operations",
+            "href": "/course/math/algebra-2/function-operations/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "inverse-relations-and-inverse-functions",
+            "title": "Inverse Relations and Inverse Functions",
+            "href": "/course/math/algebra-2/inverse-relations-and-inverse-functions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "functions-with-their-inverse-functions",
+            "title": "Functions with Their Inverse Functions",
+            "href": "/course/math/algebra-2/functions-with-their-inverse-functions/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 20,
+        "slug": "function-modeling-with-real-world-data",
+        "title": "Function Modeling with Real-World Data",
+        "topicsCount": 208,
+        "lessons": [
+          {
+            "slug": "real-world-data-modeling",
+            "title": "Real-World Data Modeling",
+            "href": "/course/math/algebra-2/real-world-data-modeling/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      }
+    ]
+  },
+  "geometry": {
+    "slug": "geometry",
+    "title": "Geometry",
+    "subtitle": "Build geometric reasoning through proofs, transformations, and interactive problem solving.",
+    "lessonsCount": 61,
+    "topicsCount": 469,
+    "units": [
+      {
+        "unitNumber": 1,
+        "slug": "points-lines-segments-and-angles",
+        "title": "Points, Lines, Segments, and Angles",
+        "topicsCount": 28,
+        "lessons": [
+          {
+            "slug": "fundamentals-of-points-lines-and-planes",
+            "title": "Fundamentals of Points, Lines, and Planes",
+            "href": "/course/math/geometry/fundamentals-of-points-lines-and-planes/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "segment-measurement-and-construction",
+            "title": "Segment Measurement and Construction",
+            "href": "/course/math/geometry/segment-measurement-and-construction/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "angle-measurement-and-construction",
+            "title": "Angle Measurement and Construction",
+            "href": "/course/math/geometry/angle-measurement-and-construction/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "relationships-between-angle-pairs",
+            "title": "Relationships Between Angle Pairs",
+            "href": "/course/math/geometry/relationships-between-angle-pairs/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 2,
+        "slug": "foundational-geometric-measurement",
+        "title": "Foundational Geometric Measurement",
+        "topicsCount": 8,
+        "lessons": [
+          {
+            "slug": "applying-geometric-formulas",
+            "title": "Applying Geometric Formulas",
+            "href": "/course/math/geometry/applying-geometric-formulas/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 3,
+        "slug": "logic-and-geometric-reasoning",
+        "title": "Logic and Geometric Reasoning",
+        "topicsCount": 30,
+        "lessons": [
+          {
+            "slug": "forming-conjectures-through-inductive-reasoning",
+            "title": "Forming Conjectures Through Inductive Reasoning",
+            "href": "/course/math/geometry/forming-conjectures-through-inductive-reasoning/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "understanding-conditional-statements",
+            "title": "Understanding Conditional Statements",
+            "href": "/course/math/geometry/understanding-conditional-statements/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "verifying-conjectures-through-deductive-reasoning",
+            "title": "Verifying Conjectures Through Deductive Reasoning",
+            "href": "/course/math/geometry/verifying-conjectures-through-deductive-reasoning/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "definitions-and-biconditional-statements",
+            "title": "Definitions and Biconditional Statements",
+            "href": "/course/math/geometry/definitions-and-biconditional-statements/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 4,
+        "slug": "proof-methods",
+        "title": "Proof Methods",
+        "topicsCount": 27,
+        "lessons": [
+          {
+            "slug": "methods-of-algebraic-proof",
+            "title": "Methods of Algebraic Proof",
+            "href": "/course/math/geometry/methods-of-algebraic-proof/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "methods-of-geometric-proof",
+            "title": "Methods of Geometric Proof",
+            "href": "/course/math/geometry/methods-of-geometric-proof/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "paragraph-and-flowchart-proof-methods",
+            "title": "Paragraph and Flowchart Proof Methods",
+            "href": "/course/math/geometry/paragraph-and-flowchart-proof-methods/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "fundamentals-of-coordinate-proof",
+            "title": "Fundamentals of Coordinate Proof",
+            "href": "/course/math/geometry/fundamentals-of-coordinate-proof/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 5,
+        "slug": "lines-angles-and-parallelism",
+        "title": "Lines, Angles, and Parallelism",
+        "topicsCount": 30,
+        "lessons": [
+          {
+            "slug": "relationships-among-planes-lines-and-angles",
+            "title": "Relationships Among Planes, Lines, and Angles",
+            "href": "/course/math/geometry/relationships-among-planes-lines-and-angles/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "angle-relationships-with-parallel-lines-and-transversals",
+            "title": "Angle Relationships with Parallel Lines and Transversals",
+            "href": "/course/math/geometry/angle-relationships-with-parallel-lines-and-transversals/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "methods-for-proving-lines-parallel",
+            "title": "Methods for Proving Lines Parallel",
+            "href": "/course/math/geometry/methods-for-proving-lines-parallel/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "exploring-perpendicular-line-properties",
+            "title": "Exploring Perpendicular-Line Properties",
+            "href": "/course/math/geometry/exploring-perpendicular-line-properties/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 6,
+        "slug": "coordinate-geometry-of-lines",
+        "title": "Coordinate Geometry of Lines",
+        "topicsCount": 39,
+        "lessons": [
+          {
+            "slug": "coordinate-plane-midpoints-and-distances",
+            "title": "Coordinate-Plane Midpoints and Distances",
+            "href": "/course/math/geometry/coordinate-plane-midpoints-and-distances/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "calculating-slope-from-two-points",
+            "title": "Calculating Slope from Two Points",
+            "href": "/course/math/geometry/calculating-slope-from-two-points/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "equations-in-slope-intercept-form",
+            "title": "Equations in Slope-Intercept Form",
+            "href": "/course/math/geometry/equations-in-slope-intercept-form/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "equations-in-point-slope-form",
+            "title": "Equations in Point-Slope Form",
+            "href": "/course/math/geometry/equations-in-point-slope-form/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "parallel-and-perpendicular-line-slope-relationships",
+            "title": "Parallel and Perpendicular Line Slope Relationships",
+            "href": "/course/math/geometry/parallel-and-perpendicular-line-slope-relationships/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 7,
+        "slug": "triangle-properties-and-classification",
+        "title": "Triangle Properties and Classification",
+        "topicsCount": 724,
+        "lessons": [
+          {
+            "slug": "triangle-classification",
+            "title": "Triangle Classification",
+            "href": "/course/math/geometry/triangle-classification/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "triangle-angle-relationships",
+            "title": "Triangle Angle Relationships",
+            "href": "/course/math/geometry/triangle-angle-relationships/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "properties-of-isosceles-and-equilateral-triangles",
+            "title": "Properties of Isosceles and Equilateral Triangles",
+            "href": "/course/math/geometry/properties-of-isosceles-and-equilateral-triangles/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 8,
+        "slug": "triangle-congruence",
+        "title": "Triangle Congruence",
+        "topicsCount": 832,
+        "lessons": [
+          {
+            "slug": "understanding-triangle-congruence",
+            "title": "Understanding Triangle Congruence",
+            "href": "/course/math/geometry/understanding-triangle-congruence/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "sss-and-sas-criteria-for-triangle-congruence",
+            "title": "SSS and SAS Criteria for Triangle Congruence",
+            "href": "/course/math/geometry/sss-and-sas-criteria-for-triangle-congruence/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "asa-aas-and-hl-criteria-for-triangle-congruence",
+            "title": "ASA, AAS, and HL Criteria for Triangle Congruence",
+            "href": "/course/math/geometry/asa-aas-and-hl-criteria-for-triangle-congruence/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "applying-cpctc-to-congruent-triangles",
+            "title": "Applying CPCTC to Congruent Triangles",
+            "href": "/course/math/geometry/applying-cpctc-to-congruent-triangles/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 9,
+        "slug": "triangle-segments-and-centers",
+        "title": "Triangle Segments and Centers",
+        "topicsCount": 916,
+        "lessons": [
+          {
+            "slug": "theorems-on-perpendicular-and-angle-bisectors",
+            "title": "Theorems on Perpendicular and Angle Bisectors",
+            "href": "/course/math/geometry/theorems-on-perpendicular-and-angle-bisectors/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "triangle-medians-altitudes-and-midsegments",
+            "title": "Triangle Medians, Altitudes, and Midsegments",
+            "href": "/course/math/geometry/triangle-medians-altitudes-and-midsegments/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 10,
+        "slug": "triangle-inequalities",
+        "title": "Triangle Inequalities",
+        "topicsCount": 1015,
+        "lessons": [
+          {
+            "slug": "triangle-inequalities-and-indirect-proof",
+            "title": "Triangle Inequalities and Indirect Proof",
+            "href": "/course/math/geometry/triangle-inequalities-and-indirect-proof/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "comparing-inequalities-between-two-triangles",
+            "title": "Comparing Inequalities Between Two Triangles",
+            "href": "/course/math/geometry/comparing-inequalities-between-two-triangles/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 11,
+        "slug": "polygons-and-parallelograms",
+        "title": "Polygons and Parallelograms",
+        "topicsCount": 1125,
+        "lessons": [
+          {
+            "slug": "exploring-polygon-attributes-and-properties",
+            "title": "Exploring Polygon Attributes and Properties",
+            "href": "/course/math/geometry/exploring-polygon-attributes-and-properties/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "exploring-parallelogram-properties",
+            "title": "Exploring Parallelogram Properties",
+            "href": "/course/math/geometry/exploring-parallelogram-properties/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "criteria-for-identifying-parallelograms",
+            "title": "Criteria for Identifying Parallelograms",
+            "href": "/course/math/geometry/criteria-for-identifying-parallelograms/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 12,
+        "slug": "special-quadrilaterals",
+        "title": "Special Quadrilaterals",
+        "topicsCount": 1225,
+        "lessons": [
+          {
+            "slug": "exploring-special-parallelogram-properties",
+            "title": "Exploring Special Parallelogram Properties",
+            "href": "/course/math/geometry/exploring-special-parallelogram-properties/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "criteria-for-identifying-special-parallelograms",
+            "title": "Criteria for Identifying Special Parallelograms",
+            "href": "/course/math/geometry/criteria-for-identifying-special-parallelograms/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "exploring-kite-and-trapezoid-properties",
+            "title": "Exploring Kite and Trapezoid Properties",
+            "href": "/course/math/geometry/exploring-kite-and-trapezoid-properties/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 13,
+        "slug": "ratios-and-similar-polygons",
+        "title": "Ratios and Similar Polygons",
+        "topicsCount": 1315,
+        "lessons": [
+          {
+            "slug": "understanding-ratios-and-proportions",
+            "title": "Understanding Ratios and Proportions",
+            "href": "/course/math/geometry/understanding-ratios-and-proportions/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "ratio-relationships-in-similar-polygons",
+            "title": "Ratio Relationships in Similar Polygons",
+            "href": "/course/math/geometry/ratio-relationships-in-similar-polygons/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 14,
+        "slug": "triangle-similarity-and-scale",
+        "title": "Triangle Similarity and Scale",
+        "topicsCount": 1416,
+        "lessons": [
+          {
+            "slug": "aa-sss-and-sas-criteria-for-triangle-similarity",
+            "title": "AA, SSS, and SAS Criteria for Triangle Similarity",
+            "href": "/course/math/geometry/aa-sss-and-sas-criteria-for-triangle-similarity/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "right-triangle-similarity",
+            "title": "Right-Triangle Similarity",
+            "href": "/course/math/geometry/right-triangle-similarity/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 15,
+        "slug": "right-triangle-theorems",
+        "title": "Right-Triangle Theorems",
+        "topicsCount": 1515,
+        "lessons": [
+          {
+            "slug": "applying-the-pythagorean-theorem",
+            "title": "Applying the Pythagorean Theorem",
+            "href": "/course/math/geometry/applying-the-pythagorean-theorem/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "applications-of-special-right-triangles",
+            "title": "Applications of Special Right Triangles",
+            "href": "/course/math/geometry/applications-of-special-right-triangles/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 16,
+        "slug": "triangle-trigonometry",
+        "title": "Triangle Trigonometry",
+        "topicsCount": 1616,
+        "lessons": [
+          {
+            "slug": "understanding-trigonometric-ratios",
+            "title": "Understanding Trigonometric Ratios",
+            "href": "/course/math/geometry/understanding-trigonometric-ratios/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "right-triangle-solution-methods",
+            "title": "Right-Triangle Solution Methods",
+            "href": "/course/math/geometry/right-triangle-solution-methods/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 17,
+        "slug": "plane-area-and-measurement",
+        "title": "Plane Area and Measurement",
+        "topicsCount": 178,
+        "lessons": [
+          {
+            "slug": "deriving-triangle-and-quadrilateral-formulas",
+            "title": "Deriving Triangle and Quadrilateral Formulas",
+            "href": "/course/math/geometry/deriving-triangle-and-quadrilateral-formulas/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 18,
+        "slug": "surface-area-and-volume",
+        "title": "Surface Area and Volume",
+        "topicsCount": 1826,
+        "lessons": [
+          {
+            "slug": "calculating-prism-and-cylinder-surface-areas",
+            "title": "Calculating Prism and Cylinder Surface Areas",
+            "href": "/course/math/geometry/calculating-prism-and-cylinder-surface-areas/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "calculating-pyramid-and-cone-surface-areas",
+            "title": "Calculating Pyramid and Cone Surface Areas",
+            "href": "/course/math/geometry/calculating-pyramid-and-cone-surface-areas/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "calculating-prism-and-cylinder-volumes",
+            "title": "Calculating Prism and Cylinder Volumes",
+            "href": "/course/math/geometry/calculating-prism-and-cylinder-volumes/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 19,
+        "slug": "circle-segments-arcs-and-measurement",
+        "title": "Circle Segments, Arcs, and Measurement",
+        "topicsCount": 1924,
+        "lessons": [
+          {
+            "slug": "circle-intersecting-lines",
+            "title": "Circle-Intersecting Lines",
+            "href": "/course/math/geometry/circle-intersecting-lines/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "relationships-between-arcs-and-chords",
+            "title": "Relationships Between Arcs and Chords",
+            "href": "/course/math/geometry/relationships-between-arcs-and-chords/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "deriving-circle-and-regular-polygon-formulas",
+            "title": "Deriving Circle and Regular-Polygon Formulas",
+            "href": "/course/math/geometry/deriving-circle-and-regular-polygon-formulas/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 20,
+        "slug": "circle-angles-segments-and-equations",
+        "title": "Circle Angles, Segments, and Equations",
+        "topicsCount": 2025,
+        "lessons": [
+          {
+            "slug": "properties-of-inscribed-angles",
+            "title": "Properties of Inscribed Angles",
+            "href": "/course/math/geometry/properties-of-inscribed-angles/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "circle-angle-relationships",
+            "title": "Circle Angle Relationships",
+            "href": "/course/math/geometry/circle-angle-relationships/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "circle-segment-relationships",
+            "title": "Circle Segment Relationships",
+            "href": "/course/math/geometry/circle-segment-relationships/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      },
+      {
+        "unitNumber": 21,
+        "slug": "rigid-transformations-and-dilations",
+        "title": "Rigid Transformations and Dilations",
+        "topicsCount": 2129,
+        "lessons": [
+          {
+            "slug": "coordinate-plane-transformations",
+            "title": "Coordinate-Plane Transformations",
+            "href": "/course/math/geometry/coordinate-plane-transformations/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "reflecting-figures",
+            "title": "Reflecting Figures",
+            "href": "/course/math/geometry/reflecting-figures/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "translating-figures",
+            "title": "Translating Figures",
+            "href": "/course/math/geometry/translating-figures/learn?entry_source=start&return_to=course_detail"
+          },
+          {
+            "slug": "rotating-figures",
+            "title": "Rotating Figures",
+            "href": "/course/math/geometry/rotating-figures/learn?entry_source=start&return_to=course_detail"
+          }
+        ]
+      }
+    ]
+  }
+}
