@@ -122,6 +122,10 @@ test.describe("Gauth Full-Stack Feature Parity & Invite-Only Admission E2E", () 
       .getByRole("button", { name: "Generate Interactive Course" })
       .click();
     await expect(page).toHaveURL(/\/course\/my\/.*\/learn/);
+    // Verify persisted CustomCourse title is rendered without the random timestamp slug suffix
+    await expect(
+      page.getByText("Fouriers Law of Heat Conduction").first()
+    ).toBeVisible();
   });
 
   test("3. Gauth Atlas: Popular Stories, Interactive AP US History World Map (106 POIs), and Silk Roads Session", async ({
@@ -135,6 +139,19 @@ test.describe("Gauth Full-Stack Feature Parity & Invite-Only Admission E2E", () 
     ).toBeVisible();
     await expect(page.getByText("Apollo 11 Moon Mission Journey")).toBeVisible();
     await expect(page.getByText("Empires of the Silk Roads")).toBeVisible();
+
+    // Generate a custom Atlas story and verify persisted title is rendered (not a raw CUID)
+    await page
+      .getByPlaceholder(/Enter any topic to explore visually/i)
+      .fill("The Meiji Restoration Industrialization");
+    await page.getByRole("button", { name: /Explore Visually/i }).click();
+    await expect(page).toHaveURL(/\/atlas\/session\//);
+    await expect(
+      page.getByRole("heading", {
+        name: "The Meiji Restoration Industrialization",
+        exact: true,
+      })
+    ).toBeVisible();
 
     // Open Empires of the Silk Roads session (/atlas/session/2008824210280452)
     await page.goto("/atlas/session/2008824210280452");
@@ -172,6 +189,25 @@ test.describe("Gauth Full-Stack Feature Parity & Invite-Only Admission E2E", () 
   test("4. Resources, Gauth PLUS, Mobile Responsive Layout, and Invite-Only Admission Flow", async ({
     page,
   }) => {
+    // Healthcheck endpoint verification
+    const healthRes = await page.request.get("/api/health");
+    expect(healthRes.status()).toBe(200);
+    const healthJson = await healthRes.json();
+    expect(healthJson.status).toBe("ok");
+    expect(healthJson.database).toBe("connected");
+
+    // Malformed JSON request body returns 400 Bad Request (not 500)
+    const badJsonRes = await page.request.fetch("/api/auth/credentials", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      data: Buffer.from("{malformed"),
+    });
+    expect(badJsonRes.status()).toBe(400);
+
+    // Unknown blog slug returns 404 NotFoundPage
+    const notFoundBlogRes = await page.goto("/blog/non-existent-slug-404");
+    expect(notFoundBlogRes?.status()).toBe(404);
+
     // Resources & Legal routes
     for (const route of [
       "/news",
@@ -253,6 +289,58 @@ test.describe("Gauth Full-Stack Feature Parity & Invite-Only Admission E2E", () 
     await page.getByRole("button", { name: /Activate Gauth Account/i }).click();
 
     await expect(page).toHaveURL("/");
+
+    // Sign back in as Admin and issue a Viewer invitation to verify 403 RBAC enforcement
+    await page.request.delete("/api/auth/credentials");
+    await page.request.post("/api/auth/credentials", {
+      data: {
+        email: "admin.e2e@gauth.example.com",
+        password: "AdminE2EPassword!2026",
+      },
+    });
+    const viewerInviteRes = await page.request.post("/api/admin/invitations", {
+      data: {
+        email: "viewer.only@gauth.example.com",
+        role: "Viewer",
+        expiresInHours: 24,
+      },
+    });
+    expect(viewerInviteRes.status()).toBe(201);
+    const viewerInviteJson = await viewerInviteRes.json();
+
+    await page.request.delete("/api/auth/credentials");
+    const acceptViewerRes = await page.request.post(
+      `/api/invitations/${viewerInviteJson.rawToken}/accept`,
+      {
+        data: {
+          email: "viewer.only@gauth.example.com",
+          name: "Read Only Viewer",
+          password: "ViewerPassword!2026",
+        },
+      }
+    );
+    expect(acceptViewerRes.status()).toBe(201);
+
+    // Verify Viewer gets 403 Forbidden on mutation endpoints
+    const viewerCourseRes = await page.request.post("/api/courses", {
+      data: { prompt: "Unauthorized Viewer Course" },
+    });
+    expect(viewerCourseRes.status()).toBe(403);
+
+    const viewerAtlasRes = await page.request.post("/api/atlas/sessions", {
+      data: { prompt: "Unauthorized Viewer Story" },
+    });
+    expect(viewerAtlasRes.status()).toBe(403);
+
+    const viewerPoiRes = await page.request.post("/api/atlas/pois", {
+      data: { title: "Unauthorized Viewer POI" },
+    });
+    expect(viewerPoiRes.status()).toBe(403);
+
+    const viewerPlusRes = await page.request.post("/api/plus/subscribe", {
+      data: { plan: "annual" },
+    });
+    expect(viewerPlusRes.status()).toBe(403);
 
     // Clean up test DB state so zero pre-seeded demo users or test records remain
     await prisma.homeworkQuestion.deleteMany({});

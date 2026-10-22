@@ -2,6 +2,7 @@
 
 import React, { use } from "react";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { GauthShell } from "@/components/GauthShell";
 import { MATH_CURRICULUMS } from "@/lib/gauth-data/courses-catalog";
 
@@ -11,8 +12,10 @@ export default function MathCurriculumDetailPage({
   params: Promise<{ curriculum: string }>;
 }) {
   const { curriculum: slug } = use(params);
-  const current =
-    MATH_CURRICULUMS.find((c) => c.slug === slug) || MATH_CURRICULUMS[0];
+  const current = MATH_CURRICULUMS.find((c) => c.slug === slug);
+  if (!current) {
+    notFound();
+  }
 
   return (
     <GauthShell>

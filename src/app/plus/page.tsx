@@ -19,6 +19,7 @@ export default function GauthPlusPage() {
         body: JSON.stringify({ plan: selectedPlan }),
       });
       const data = await res.json();
+      window.dispatchEvent(new Event("gauth:quota-updated"));
       if (data?.message) {
         setStatusMsg(data.message);
       }

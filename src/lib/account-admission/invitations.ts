@@ -167,7 +167,6 @@ export async function inspectInvitation(rawToken: string, now = new Date()) {
       valid: false as const,
       status: "EXPIRED" as const,
       httpStatus: 410,
-      email: invitation.email,
       maskedEmail: maskEmail(invitation.email),
       role: invitation.role,
       expiresAt: invitation.expiresAt,
@@ -179,7 +178,6 @@ export async function inspectInvitation(rawToken: string, now = new Date()) {
       valid: false as const,
       status: invitation.status as "ACCEPTED" | "REVOKED" | "EXPIRED",
       httpStatus: 410,
-      email: invitation.email,
       maskedEmail: maskEmail(invitation.email),
       role: invitation.role,
       expiresAt: invitation.expiresAt,
@@ -293,6 +291,11 @@ export async function acceptInvitation(input: AcceptInvitationInput) {
             name: displayName,
             passwordHash,
             role: invitation.role,
+            plan: invitation.role === "Admin" ? "PLUS_ANNUAL" : "FREE",
+            queriesRemaining: invitation.role === "Admin" ? 9999 : 3,
+            aiProRemaining: invitation.role === "Admin" ? 9999 : 1,
+            atlasCreditsRemaining: invitation.role === "Admin" ? 9999 : 10,
+            courseCreatesRemaining: invitation.role === "Admin" ? 9999 : 3,
             invitedById: invitation.invitedById,
             revokedAt: null,
             emailVerified: now,
@@ -304,10 +307,21 @@ export async function acceptInvitation(input: AcceptInvitationInput) {
             name: displayName,
             passwordHash,
             role: invitation.role,
+            plan: invitation.role === "Admin" ? "PLUS_ANNUAL" : "FREE",
+            queriesRemaining: invitation.role === "Admin" ? 9999 : 3,
+            aiProRemaining: invitation.role === "Admin" ? 9999 : 1,
+            atlasCreditsRemaining: invitation.role === "Admin" ? 9999 : 10,
+            courseCreatesRemaining: invitation.role === "Admin" ? 9999 : 3,
             invitedById: invitation.invitedById,
             emailVerified: now,
           },
         });
+
+    // Clear acceptedById on any prior invitation linked to a restored user before linking the new invitation
+    await tx.invitation.updateMany({
+      where: { acceptedById: createdOrRestored.id },
+      data: { acceptedById: null },
+    });
 
     await tx.invitation.update({
       where: { id: invitation.id },

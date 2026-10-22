@@ -58,9 +58,27 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "forbidden", message: "Admin role required." }, { status: 403 });
   }
 
+  let body: Record<string, unknown>;
   try {
-    const body = await request.json();
-    const role = body.role && isValidRole(String(body.role)) ? body.role : "Creator";
+    body = (await request.json()) as Record<string, unknown>;
+  } catch {
+    return NextResponse.json(
+      { error: "invalid_json", message: "Malformed JSON request body." },
+      { status: 400 }
+    );
+  }
+
+  try {
+    if (body.role !== undefined && !isValidRole(String(body.role))) {
+      return NextResponse.json(
+        {
+          error: "invalid_role",
+          message: "Role must be one of Admin, Creator, or Viewer.",
+        },
+        { status: 400 }
+      );
+    }
+    const role = body.role ? (String(body.role) as "Admin" | "Creator" | "Viewer") : "Creator";
     const expiresInHours = body.expiresInHours ? Number(body.expiresInHours) : 72;
     const ipAddress = request.headers.get("x-forwarded-for") || "127.0.0.1";
     const userAgent = request.headers.get("user-agent") || "browser";
@@ -76,8 +94,8 @@ export async function POST(request: Request) {
     });
 
     const origin =
-      request.headers.get("origin") ||
       process.env.NEXTAUTH_URL ||
+      request.headers.get("origin") ||
       "http://localhost:3000";
 
     return NextResponse.json(

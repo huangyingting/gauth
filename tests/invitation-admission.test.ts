@@ -119,6 +119,8 @@ test("Invite-only account admission lifecycle: zero demo accounts, CLI admin boo
   const inspectedAfterRevoke = await inspectInvitation(revocableToken);
   assert.equal(inspectedAfterRevoke.valid, false);
   assert.equal(inspectedAfterRevoke.status, "REVOKED");
+  assert.equal("email" in inspectedAfterRevoke, false, "410 responses must not leak raw email");
+  assert.ok(inspectedAfterRevoke.maskedEmail.includes("***"));
 
   // 8. Authenticate credentials for active member
   const authResult = await authenticateCredentials({
@@ -147,6 +149,36 @@ test("Invite-only account admission lifecycle: zero demo accounts, CLI admin boo
       }),
     (err: unknown) =>
       err instanceof AccountAdmissionError && err.code === "account_revoked"
+  );
+
+  // 9b. Re-inviting a previously revoked user and accepting the new invitation must restore the user without P2002
+  const { rawToken: reinviteToken } = await createInvitation({
+    email: "scholar.one@gauth.example.com",
+    role: "Viewer",
+    invitedById: adminUser.id,
+    actorEmail: adminUser.email,
+  });
+  const { user: restoredUser } = await acceptInvitation({
+    rawToken: reinviteToken,
+    email: "scholar.one@gauth.example.com",
+    name: "Scholar One Restored",
+    password: "RestoredPassword!2026",
+  });
+  assert.equal(restoredUser.id, memberUser.id, "Must restore existing User record");
+  assert.equal(restoredUser.revokedAt, null, "Must clear revokedAt");
+  assert.equal(restoredUser.role, "Viewer", "Must update role to new invitation role");
+  assert.equal(restoredUser.queriesRemaining, 3, "Must reset free quota on restore");
+
+  // 9c. bootstrapAdmin with allowExistingUpdate must reject creating a brand-new second admin email
+  await assert.rejects(
+    () =>
+      bootstrapAdmin({
+        email: "uninvited.second.admin@gauth.example.com",
+        password: "SecondAdminPassword!2026",
+        allowExistingUpdate: true,
+      }),
+    (err: unknown) =>
+      err instanceof AccountAdmissionError && err.status === 409
   );
 
   // 10. Verify AuditLog captured all security events

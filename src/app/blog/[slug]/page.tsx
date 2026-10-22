@@ -2,6 +2,7 @@
 
 import React, { use } from "react";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { GauthShell } from "@/components/GauthShell";
 import { GAUTH_BLOG_ARTICLES } from "@/lib/gauth-data/solver-engine";
 
@@ -11,8 +12,10 @@ export default function BlogArticleDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = use(params);
-  const article =
-    GAUTH_BLOG_ARTICLES.find((a) => a.slug === slug) || GAUTH_BLOG_ARTICLES[0];
+  const article = GAUTH_BLOG_ARTICLES.find((a) => a.slug === slug);
+  if (!article) {
+    notFound();
+  }
 
   return (
     <GauthShell>

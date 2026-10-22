@@ -13,7 +13,7 @@ export const SESSION_COOKIES = [
 
 const IS_SECURE_URL = process.env.NEXTAUTH_URL
   ? process.env.NEXTAUTH_URL.startsWith("https:")
-  : process.env.NODE_ENV === "production";
+  : false;
 
 export const SESSION_COOKIE_NAME = IS_SECURE_URL
   ? SESSION_COOKIES[1]
@@ -74,7 +74,8 @@ export async function getActiveSessionUser() {
     });
 
     if (!sessionRecord) return null;
-    if (sessionRecord.expires <= new Date()) {
+    const now = new Date();
+    if (sessionRecord.expires <= now) {
       await prisma.session.deleteMany({ where: { id: sessionRecord.id } });
       return null;
     }
@@ -82,6 +83,20 @@ export async function getActiveSessionUser() {
       await prisma.session.deleteMany({ where: { userId: sessionRecord.userId } });
       return null;
     }
+
+    // Sliding session expiration: extend when older than SESSION_UPDATE_AGE_SECONDS
+    const refreshThresholdMs =
+      (SESSION_MAX_AGE_SECONDS - SESSION_UPDATE_AGE_SECONDS) * 1000;
+    if (sessionRecord.expires.getTime() - now.getTime() < refreshThresholdMs) {
+      const nextExpires = new Date(
+        now.getTime() + SESSION_MAX_AGE_SECONDS * 1000
+      );
+      await prisma.session.update({
+        where: { id: sessionRecord.id },
+        data: { expires: nextExpires },
+      });
+    }
+
     return sessionRecord.user;
   } catch {
     return null;

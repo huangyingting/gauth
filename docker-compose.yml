@@ -1,0 +1,37 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: gauth
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-gauth_prod_secret}
+      POSTGRES_DB: gauth_prod
+    ports:
+      - "5432:5432"
+    volumes:
+      - gauth_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gauth -d gauth_prod"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  gauth-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      NODE_ENV: production
+      DATABASE_PROVIDER: postgresql
+      DATABASE_URL: postgresql://gauth:${POSTGRES_PASSWORD:-gauth_prod_secret}@postgres:5432/gauth_prod?schema=public
+      NEXTAUTH_URL: ${NEXTAUTH_URL:-http://localhost:3000}
+      NEXTAUTH_SECRET: ${NEXTAUTH_SECRET:?NEXTAUTH_SECRET is required}
+    ports:
+      - "3000:3000"
+
+volumes:
+  gauth_pgdata:

@@ -1,11 +1,13 @@
 "use client";
 
-import React, { use, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 import Link from "next/link";
 import {
   ATLAS_VOICEOVER_LANGUAGES,
   findAtlasSessionById,
 } from "@/lib/gauth-data/atlas-catalog";
+
+type AtlasStoryItem = ReturnType<typeof findAtlasSessionById>;
 
 export default function AtlasSessionViewerPage({
   params,
@@ -13,7 +15,11 @@ export default function AtlasSessionViewerPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = use(params);
-  const session = findAtlasSessionById(id);
+  const staticSession = findAtlasSessionById(id);
+  const [customSession, setCustomSession] = useState<AtlasStoryItem | null>(
+    null
+  );
+  const session = customSession ?? staticSession;
 
   const [viewMode, setViewMode] = useState<"View" | "Details">("View");
   const [activeChapterIdx, setActiveChapterIdx] = useState(0);
@@ -25,6 +31,27 @@ export default function AtlasSessionViewerPage({
   const [generatedVideoBanner, setGeneratedVideoBanner] = useState<
     string | null
   >(null);
+
+  useEffect(() => {
+    fetch(`/api/atlas/sessions?id=${encodeURIComponent(id)}`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        if (data?.session && Array.isArray(data.session.chapters)) {
+          setCustomSession(data.session as AtlasStoryItem);
+          if (data.session.voiceLanguage) {
+            setSelectedLang(data.session.voiceLanguage);
+          }
+          if (data.session.videoGenerated) {
+            setGeneratedVideoBanner(
+              `AI Video Story generated in ${
+                data.session.voiceLanguage || "English (United States)"
+              } (01:54).`
+            );
+          }
+        }
+      })
+      .catch(() => null);
+  }, [id]);
 
   const activeChapter =
     session.chapters[activeChapterIdx] || session.chapters[0];

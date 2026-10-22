@@ -59,6 +59,7 @@ function SearchQuestionContent() {
         }),
       });
       const data = await res.json();
+      window.dispatchEvent(new Event("gauth:quota-updated"));
       if (data?.solution) {
         setSolution(data.solution);
         setHelpfulVote(null);
@@ -80,12 +81,14 @@ function SearchQuestionContent() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          questionId: solution.id,
           questionText: solution.questionText,
           subject: solution.subject,
           isProVerified: true,
         }),
       });
       const data = await res.json();
+      window.dispatchEvent(new Event("gauth:quota-updated"));
       if (data?.solution) {
         setSolution(data.solution);
       }

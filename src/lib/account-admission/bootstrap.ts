@@ -43,7 +43,7 @@ export async function bootstrapAdmin(input: {
       where: { email },
     });
 
-    if (existingAdminCount > 0 && !input.allowExistingUpdate) {
+    if (existingAdminCount > 0 && (!input.allowExistingUpdate || !existingUser)) {
       throw new AccountAdmissionError(
         409,
         "admin_already_exists",

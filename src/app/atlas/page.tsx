@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { GauthShell } from "@/components/GauthShell";
@@ -10,14 +10,28 @@ import {
   ATLAS_FAQ_ITEMS,
 } from "@/lib/gauth-data/atlas-catalog";
 
+type AtlasStoryItem = (typeof ATLAS_INTERACTIVE_SESSIONS)[number];
+
 export default function AtlasLandingPage() {
   const router = useRouter();
   const [prompt, setPrompt] = useState("");
   const [generating, setGenerating] = useState(false);
+  const [customSessions, setCustomSessions] = useState<AtlasStoryItem[]>([]);
   const [filterTab, setFilterTab] = useState<"All" | "Video" | "Interactive Story">(
     "All"
   );
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
+
+  useEffect(() => {
+    fetch("/api/atlas/sessions")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        if (Array.isArray(data?.customSessions)) {
+          setCustomSessions(data.customSessions);
+        }
+      })
+      .catch(() => null);
+  }, []);
 
   async function handleGenerateVisualStory(e: React.FormEvent) {
     e.preventDefault();
@@ -31,6 +45,7 @@ export default function AtlasLandingPage() {
         body: JSON.stringify({ prompt: q }),
       });
       const data = await res.json();
+      window.dispatchEvent(new Event("gauth:quota-updated"));
       if (data?.session?.href) {
         router.push(data.session.href);
       }
@@ -39,7 +54,11 @@ export default function AtlasLandingPage() {
     }
   }
 
-  const allStories = [...ATLAS_VIDEO_STORIES, ...ATLAS_INTERACTIVE_SESSIONS];
+  const allStories = [
+    ...customSessions,
+    ...ATLAS_VIDEO_STORIES,
+    ...ATLAS_INTERACTIVE_SESSIONS,
+  ];
   const filteredStories =
     filterTab === "All"
       ? allStories

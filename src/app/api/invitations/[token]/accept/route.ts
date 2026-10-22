@@ -9,9 +9,18 @@ export async function POST(
   request: Request,
   context: { params: Promise<{ token: string }> }
 ) {
+  let body: Record<string, unknown>;
+  try {
+    body = (await request.json()) as Record<string, unknown>;
+  } catch {
+    return NextResponse.json(
+      { error: "invalid_json", message: "Malformed JSON request body." },
+      { status: 400 }
+    );
+  }
+
   try {
     const { token } = await context.params;
-    const body = await request.json();
     const ipAddress = request.headers.get("x-forwarded-for") || "127.0.0.1";
     const userAgent = request.headers.get("user-agent") || "browser";
 

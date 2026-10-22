@@ -1,8 +1,10 @@
 "use client";
 
-import React, { use, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 import Link from "next/link";
 import { findCourseByCategoryAndSlug } from "@/lib/gauth-data/courses-catalog";
+
+type CourseItem = ReturnType<typeof findCourseByCategoryAndSlug>;
 
 export default function CourseLessonPlayerPage({
   params,
@@ -10,7 +12,26 @@ export default function CourseLessonPlayerPage({
   params: Promise<{ category: string; slug: string }>;
 }) {
   const { category, slug } = use(params);
-  const course = findCourseByCategoryAndSlug(category, slug);
+  const staticCourse = findCourseByCategoryAndSlug(category, slug);
+  const [customCourse, setCustomCourse] = useState<CourseItem | null>(null);
+  const course = customCourse ?? staticCourse;
+
+  useEffect(() => {
+    fetch(`/api/courses?slug=${encodeURIComponent(slug)}`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        if (data?.course && Array.isArray(data.course.blocks)) {
+          setCustomCourse(data.course as CourseItem);
+          setTutorMessages([
+            {
+              role: "tutor",
+              text: `Welcome to **${data.course.title}**! Adjust the interactive simulation slider or ask me any question about the current block.`,
+            },
+          ]);
+        }
+      })
+      .catch(() => null);
+  }, [slug]);
 
   const [audioModalDismissed, setAudioModalDismissed] = useState(false);
   const [audioEnabled, setAudioEnabled] = useState(true);

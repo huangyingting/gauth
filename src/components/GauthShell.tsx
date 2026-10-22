@@ -9,7 +9,7 @@ export interface SessionUserClient {
   id: string;
   email: string;
   name: string | null;
-  role: "Admin" | "Member" | "Viewer";
+  role: "Admin" | "Creator" | "Viewer";
   planTier: string;
   queriesRemaining: number;
   proQuotaRemaining: number;
@@ -57,12 +57,17 @@ export function GauthShell({
   const [plusFeedback, setPlusFeedback] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/api/auth/me")
-      .then((r) => r.json())
-      .then((data) => {
-        if (data?.user) setUser(data.user);
-      })
-      .catch(() => null);
+    const refreshUser = () => {
+      fetch("/api/auth/me")
+        .then((r) => r.json())
+        .then((data) => {
+          if (data?.user) setUser(data.user);
+        })
+        .catch(() => null);
+    };
+    refreshUser();
+    window.addEventListener("gauth:quota-updated", refreshUser);
+    return () => window.removeEventListener("gauth:quota-updated", refreshUser);
   }, [pathname]);
 
   useEffect(() => {

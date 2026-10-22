@@ -1,0 +1,15 @@
+node_modules
+.next
+.git
+.env
+.env.*
+!.env.example
+.cred*
+.linkedin*
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+test-results
+playwright-report
+screenshots

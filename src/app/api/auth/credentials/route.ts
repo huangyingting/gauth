@@ -10,8 +10,24 @@ import {
 } from "@/lib/account-admission";
 
 export async function POST(request: Request) {
+  let body: Record<string, unknown>;
   try {
-    const body = await request.json();
+    const parsed = await request.json();
+    if (typeof parsed !== "object" || parsed === null || Array.isArray(parsed)) {
+      return NextResponse.json(
+        { error: "invalid_json", message: "Request body must be a JSON object." },
+        { status: 400 }
+      );
+    }
+    body = parsed as Record<string, unknown>;
+  } catch {
+    return NextResponse.json(
+      { error: "invalid_json", message: "Malformed JSON request body." },
+      { status: 400 }
+    );
+  }
+
+  try {
     const ipAddress = request.headers.get("x-forwarded-for") || "127.0.0.1";
     const userAgent = request.headers.get("user-agent") || "browser";
 

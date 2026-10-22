@@ -10,6 +10,7 @@ import {
   SESSION_UPDATE_AGE_SECONDS,
 } from "./account-admission/session";
 import { normalizeEmail } from "./account-admission/tokens";
+import { writeAuditLog } from "./account-admission/audit";
 
 export const authOptions: NextAuthOptions = {
   adapter: PrismaAdapter(prisma) as Adapter,
@@ -28,6 +29,7 @@ export const authOptions: NextAuthOptions = {
           GoogleProvider({
             clientId: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+            allowDangerousEmailAccountLinking: true,
           }),
         ]
       : []),
@@ -36,19 +38,47 @@ export const authOptions: NextAuthOptions = {
           GitHubProvider({
             clientId: process.env.GITHUB_ID,
             clientSecret: process.env.GITHUB_SECRET,
+            allowDangerousEmailAccountLinking: true,
           }),
         ]
       : []),
   ],
   callbacks: {
-    async signIn({ user }) {
-      if (!user?.email) return false;
-      const existing = await prisma.user.findUnique({
-        where: { email: normalizeEmail(user.email) },
-      });
-      if (!existing || existing.revokedAt !== null) {
+    async signIn({ user, account }) {
+      if (!user?.email) {
+        await writeAuditLog(prisma, {
+          action: "SIGN_IN_REJECTED",
+          targetType: "User",
+          metadata: { reason: "missing_email", provider: account?.provider ?? "oauth" },
+        });
         return false;
       }
+      const normalized = normalizeEmail(user.email);
+      const existing = await prisma.user.findUnique({
+        where: { email: normalized },
+      });
+      if (!existing || existing.revokedAt !== null) {
+        await writeAuditLog(prisma, {
+          actorId: existing?.id ?? null,
+          actorEmail: normalized,
+          action: "SIGN_IN_REJECTED",
+          targetType: "User",
+          targetId: existing?.id ?? null,
+          metadata: {
+            reason: !existing ? "not_invited" : "user_revoked",
+            provider: account?.provider ?? "oauth",
+          },
+        });
+        return false;
+      }
+      await writeAuditLog(prisma, {
+        actorId: existing.id,
+        actorEmail: existing.email,
+        action: "SIGN_IN_SUCCEEDED",
+        targetType: "User",
+        targetId: existing.id,
+        metadata: { provider: account?.provider ?? "oauth" },
+      });
       return true;
     },
     async session({ session, user }) {
